@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ming.dialectspeak.yuyin"
+    android:background="@color/material_grey_100">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/back_top"
+        android:gravity="center"
+        android:baselineAligned="false"
+        android:id="@+id/linearLayout">
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_putong"
+                android:background="@drawable/btnyuyin_selector"
+                android:gravity="center"
+                android:layout_weight="1"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+                android:drawableRight="@mipmap/trans_down_arrow"
+                android:id="@+id/btn_yuyin_speech"
+            android:textColor="@android:color/tertiary_text_light" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_trans_change_normal"
+            android:layout_gravity="center_vertical" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_shanxi"
+                android:layout_weight="1"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:background="@drawable/btnyuyin_selector"
+                android:drawableLeft="@mipmap/trans_down_arrow"
+                android:id="@+id/btn_yuyin_read"
+                android:textColor="@android:color/tertiary_text_light" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start_yuyin"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="@string/start_recoring"
+        android:layout_marginBottom="20dp"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:drawableRight="@mipmap/btn_map_voice_png"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/popwin_shaw"
+        android:textColor="@color/tv_normal" />
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView_result"
+        android:padding="15dp"
+        android:visibility="gone"
+        android:divider="@color/nocolor"
+        android:layout_below="@+id/layout_addad"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_start_yuyin" />
+
+    <LinearLayout
+        android:id="@+id/layout_shiju"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/btn_start_yuyin"
+        android:layout_below="@+id/layout_addad">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="陕西方言版《清明》"
+            android:textSize="18sp"
+            android:layout_marginBottom="15dp"
+            android:textColor="@color/tv_normal" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="清明时节雨涮涮，"
+            android:textColor="@color/tv_normal"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="跑批一天累日塌。"
+            android:textColor="@color/tv_normal"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="打听酒家在阿嗒，"
+            android:textSize="15sp"
+            android:textColor="@color/tv_normal"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="碎松一指在雾嗒。"
+            android:textColor="@color/tv_normal"
+            android:textSize="15sp"
+            android:layout_marginBottom="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（内容来自网络）"
+            android:textSize="12sp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/tv_normal" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_addad"
+        android:layout_below="@+id/linearLayout"></LinearLayout>
+</RelativeLayout>

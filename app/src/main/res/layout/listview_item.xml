@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_listad"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:text="@string/gugu"
+            android:id="@+id/button"
+            android:background="@drawable/listview_button"
+            android:textColor="@color/back_top"
+            android:layout_gravity="center_vertical"
+            android:textSize="12sp"
+            android:layout_marginRight="10dp" />
+
+        <LinearLayout
+            android:background="@drawable/popwin_shaw"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="5dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yuansheng_share"
+                    android:background="@drawable/btnyuyin_selector"
+                    android:layout_weight="1"
+                    android:textColor="@color/tv_normal"
+                    android:textStyle="bold"
+                    android:id="@+id/btn_yuansheng_share" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/url_share"
+                    android:background="@drawable/btnyuyin_selector"
+                    android:layout_weight="1"
+                    android:textColor="@color/tv_normal"
+                    android:id="@+id/btn_url_share"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/tv_normal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"></View>
+            <RelativeLayout
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/layout_listitem_bottom">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="test"
+                    android:id="@+id/tv_start_msg"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:lineSpacingExtra="2dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@+id/img_start_sound"
+                    android:layout_toStartOf="@+id/img_start_sound"
+                    android:textSize="13sp"
+                    android:textColor="@color/tv_normal"
+                    android:layout_marginBottom="5dp" />
+
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:id="@+id/img_start_sound"
+                    android:src="@mipmap/guide_map_notification"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

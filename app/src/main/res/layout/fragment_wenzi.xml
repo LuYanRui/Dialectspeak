@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ming.dialectspeak.wenzi"
+    android:weightSum="1"
+    android:background="@color/material_grey_100">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/back_top"
+            android:gravity="center">
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_wenzi_choice"
+                android:paddingRight="18dp"
+                android:paddingLeft="18dp"
+                android:background="@drawable/btnyuyin_selector"
+                android:gravity="center"
+                android:drawableRight="@mipmap/trans_down_arrow"
+                android:id="@+id/btn_wenzi_choice"
+                android:textColor="@android:color/tertiary_text_light" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5px"
+            android:background="@color/tv_normal"></View>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/edit_yuyin"
+            android:hint="@string/edit_hint"
+            android:gravity="top|left"
+            android:padding="8dp"
+            android:textColor="@android:color/tertiary_text_light"
+            android:background="@color/back_top"
+            android:textSize="13sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/popwin_shaw"
+            android:layout_gravity="center_horizontal">
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/img_wenzi_share"
+                android:layout_marginLeft="5dp"
+                android:background="@color/nocolor"
+                android:src="@mipmap/trans_share_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/img_wenzi_go"
+                android:layout_marginRight="15dp"
+                android:background="@color/nocolor"
+                android:src="@mipmap/translate_normal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/img_wenzi_shareper"
+                android:background="@color/nocolor"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_wenzi_share"
+                android:layout_toEndOf="@+id/img_wenzi_share"
+                android:src="@mipmap/translator_man_normal"
+                android:layout_marginLeft="10dp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layout_wenzi_bottom">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/img_wenzi_pause"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/navitts_replay_normal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp" />
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/processbar_wenzi"
+            android:max="100"
+            android:progress="0"
+            android:indeterminate="false"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_process_vaule"
+            android:layout_toRightOf="@+id/img_wenzi_pause"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/tv_process_vaule"
+            android:layout_centerVertical="true"
+            android:textSize="12sp"
+            android:textColor="@color/tv_normal"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="30dp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

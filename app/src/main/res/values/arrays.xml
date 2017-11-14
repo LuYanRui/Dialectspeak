@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_speech">
+        <item>普通话</item>
+        <item>粤语</item>
+        <item>四川话</item>
+        <item>河南话</item>
+    </string-array>
+    <string-array name="array_read">
+        <item>陕西话</item>
+        <item>湖南话</item>
+        <item>河南话</item>
+        <item>四川话</item>
+        <item>东北话</item>
+        <item>台普</item>
+        <item>粤语女</item>
+        <item>粤语男</item>
+    </string-array>
+</resources>

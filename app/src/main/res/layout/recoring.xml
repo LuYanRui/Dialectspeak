@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:voiceView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:id="@+id/layout_recording_ad"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:alpha="0.6"
+        android:background="@drawable/loading_shape"
+        android:id="@+id/linear_re_back">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancle_recor"
+            android:id="@+id/tv_recoring_title"
+            android:textSize="15sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="@color/back_top" />
+        <myview.VoiceLineView
+        android:id="@+id/voicLine"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@android:color/transparent"
+        voiceView:middleLine="@android:color/transparent"
+        voiceView:middleLineHeight="0dp"
+        voiceView:rectSpace="0dp"
+        voiceView:rectWidth="1dp"
+        voiceView:viewMode="line"
+        voiceView:voiceLine="@color/back_top"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lin_ad"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+
+    </LinearLayout>
+</RelativeLayout>

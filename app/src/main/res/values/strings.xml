@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">咕咕方言</string>
+    <string name="zhuan_img">lanuagechange</string>
+    <string-array name="speech_array">
+        <item>小新</item>
+        <item>小丸子</item>
+        <item>粤语男</item>
+        <item>粤语女</item>
+        <item>台普</item>
+        <item>东北话</item>
+        <item>四川话</item>
+        <item>河南话</item>
+        <item>湖南话</item>
+        <item>陕西话</item>
+
+    </string-array>
+
+    <string name="title_activity_splash_fullscreen">SplashFullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="weixin">新浪微博：GUGU_DIALECT</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="wenzi">舞转回红袖</string>
+    <string name="yuyin">七彩变幻</string>
+    <string name="setting">个性化设置</string>
+    <string name="btn_putong">普通话</string>
+    <string name="btn_shanxi">陕西话</string>
+    <string name="recoring">录音中...</string>
+    <string name="canle">取消</string>
+    <string name="speak_over">说完了</string>
+    <string name="loading">正在努力识别中...</string>
+    <string name="start_recoring">咕咕~~</string>
+    <string name="btn_wenzi_choice">转:陕西话</string>
+    <string name="edit_hint">在此输入要转换的文本</string>
+    <string name="cancle_recor">上滑取消录音</string>
+    <string name="gugu">咕咕</string>
+    <string name="url_share">链接分享</string>
+    <string name="yuansheng_share">原声分享</string>
+    <string name="tvspeed">语速调节</string>
+    <string name="tvpeedset">语速</string>
+    <string name="waitingtime">原声分享等待时间</string>
+    <string name="sharefriend">推荐给朋友</string>
+    <string name="checkupdate">检查更新</string>
+    <string name="about">关于</string>
+    <string name="newyuyin">语音</string>
+    <string name="newwenzi">文字</string>
+    <string name="newmy">我的</string>
+</resources>

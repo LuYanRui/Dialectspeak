@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ming.dialectspeak.MainActivity"
+    android:background="@color/material_grey_100">
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="New Text"-->
+        <!--android:id="@+id/tv_msg"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Start"-->
+        <!--android:id="@+id/btn_start"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+
+    <!--<LinearLayout-->
+        <!--android:orientation="horizontal"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:background="@color/back_top"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:id="@+id/linearLayout">-->
+
+        <!--<Spinner-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/spinner_speech"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_gravity="center_vertical" />-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageView"-->
+            <!--android:layout_weight="1"-->
+            <!--android:src="@mipmap/ic_launcher"-->
+            <!--android:contentDescription="@string/zhuan_img"-->
+            <!--android:layout_gravity="center_vertical" />-->
+
+        <!--<Spinner-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/spinner_read"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_gravity="center_vertical" />-->
+    <!--</LinearLayout>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="New Text"-->
+        <!--android:id="@+id/tv_buffer"-->
+        <!--android:layout_below="@+id/linearLayout"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginTop="56dp" />-->
+
+    <!--<Button-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="New Button"-->
+        <!--android:id="@+id/btn_restart"-->
+        <!--android:onClick="btnRe"-->
+        <!--android:layout_above="@+id/btn_start"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="42dp" />-->
+
+<android.support.v4.view.ViewPager
+    android:id="@+id/viewpager"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignBottom="@+id/view_line"></android.support.v4.view.ViewPager>
+<View
+    android:id="@+id/view_line"
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="@color/button_material_dark"
+    android:layout_above="@+id/layout_start_bottom"
+    android:layout_marginBottom="3dp"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layout_start_bottom"
+        android:layout_marginBottom="3dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:id="@+id/layout_yuyin"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="layoutYuyin"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_tab_circle"
+                android:id="@+id/img_yuyin" />
+            <TextView
+                android:id="@+id/tv_yuyin_bot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/newyuyin"
+                android:textColor="@android:color/tertiary_text_light" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_wenzi"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="layoutWenzi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="28dp"
+                android:src="@mipmap/ic_tab_course"
+                android:id="@+id/img_wenzi" />
+            <TextView
+                android:id="@+id/tv_wenzi_bot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/newwenzi"
+                android:textColor="@android:color/tertiary_text_light" />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/layout_setting"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:onClick="layoutSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_tab_me"
+                android:id="@+id/img_setting" />
+            <TextView
+                android:id="@+id/tv_setting_bot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="10sp"
+                android:text="@string/newmy"
+                android:textColor="@android:color/tertiary_text_light" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

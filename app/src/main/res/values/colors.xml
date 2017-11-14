@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5ecfba</color>
+    <color name="colorPrimaryDark">#FF58C1AD</color>
+    <color name="colorAccent">#ff4081</color>
+    <color name="back_top">#ffffff</color>
+    <color name="holo_blue">#FF33E5B5</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="tv_normal">#808080</color>
+    <color name="nocolor">#00000000</color>
+    <color name="btn_press">#e0e0e0</color>
+    <color name="recoring">#A0000000</color>
+    <color name="loading_re">#669900</color>
+    <color name="loading_cancle">#ff4444</color>
+</resources>
